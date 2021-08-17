@@ -1,7 +1,9 @@
 package com.example.demo.model;
 
+import javax.validation.constraints.NotBlank;
+
 public class CustomerRequest {
-    private Integer id;
+    @NotBlank
     private String name;
 
     public CustomerRequest() {
@@ -11,7 +13,4 @@ public class CustomerRequest {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 }
